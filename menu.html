@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu - KRMU Canteen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-menu">
+    <div class="top-bar">
+      <h2>🍔 Menu</h2>
+      <div class="top-actions">
+        <button class="btn small" onclick="viewMyOrders()">My Orders</button>
+        <button class="btn logout" onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div id="menuItems" class="menu-items"></div>
+
+    <h3>🛒 Your Cart</h3>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total">Total: ₹<span id="totalPrice">0</span></div>
+    <button id="placeOrder" class="btn">Place Order</button>
+
+    <!-- Modal for my orders -->
+    <div id="ordersModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>📜 My Orders</h3>
+        <div id="myOrdersList"></div>
+        <button class="btn" onclick="closeOrdersModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>

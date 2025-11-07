@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Staff Login - KRMU Canteen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-login container-menu">
+    <h2>👨‍🍳 Staff Login</h2>
+    <form id="loginFormStaff">
+      <input type="email" id="emailStaff" placeholder="Email" required />
+      <input type="password" id="passwordStaff" placeholder="Password" required />
+      <label class="show-pass">
+        <input type="checkbox" id="togglePasswordStaff" /> Show Password
+      </label>
+      <button type="submit" class="btn">Log In</button>
+    </form>
+    <p class="back-link"><a href="index.html">⬅ Back to Home</a></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('togglePasswordStaff').addEventListener('change', function() {
+      const p = document.getElementById('passwordStaff');
+      p.type = this.checked ? 'text' : 'password';
+    });
+
+    document.getElementById('loginFormStaff').addEventListener('submit', function(e) {
+      e.preventDefault();
+      loginUser(document.getElementById('emailStaff').value.trim(), document.getElementById('passwordStaff').value.trim(), 'staff');
+    });
+  </script>
+</body>
+</html>

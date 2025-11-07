@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Customer Login - KRMU Canteen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-login container-menu">
+    <h2>👩‍💼 Customer Login</h2>
+    <form id="loginFormCustomer">
+      <input type="email" id="emailCust" placeholder="Email" required />
+      <input type="password" id="passwordCust" placeholder="Password" required />
+      <label class="show-pass">
+        <input type="checkbox" id="togglePasswordCust" /> Show Password
+      </label>
+      <button type="submit" class="btn">Log In</button>
+    </form>
+    <p class="back-link">Don't have an account? <a href="register.html">Register here</a></p>
+    <p class="back-link"><a href="index.html">⬅ Back to Home</a></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('togglePasswordCust').addEventListener('change', function() {
+      const p = document.getElementById('passwordCust');
+      p.type = this.checked ? 'text' : 'password';
+    });
+
+    // Hook login form
+    document.getElementById('loginFormCustomer').addEventListener('submit', function(e) {
+      e.preventDefault();
+      loginUser(document.getElementById('emailCust').value.trim(), document.getElementById('passwordCust').value.trim(), 'customer');
+    });
+  </script>
+</body>
+</html>

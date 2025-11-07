@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register - KRMU Canteen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container register">
+    <h2>📝 Register</h2>
+    <form id="registerForm">
+      <input type="text" id="firstname" placeholder="First Name" required />
+      <input type="text" id="lastname" placeholder="Last Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="regPassword" placeholder="Password (min 4 chars)" required />
+      <label class="show-pass">
+        <input type="checkbox" id="toggleRegPassword" /> Show Password
+      </label>
+      <select id="role" required>
+        <option value="">-- Select Role --</option>
+        <option value="customer">Customer</option>
+        <option value="staff">Staff</option>
+      </select>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p class="back-link">Already have an account? <a href="index.html">Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // small per-page password toggle wiring (script.js also handles core auth)
+    document.getElementById('toggleRegPassword').addEventListener('change', function() {
+      const p = document.getElementById('regPassword');
+      p.type = this.checked ? 'text' : 'password';
+    });
+  </script>
+</body>
+</html>
