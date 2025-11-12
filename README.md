@@ -86,10 +86,6 @@ Staff can view and update order status.
 
 Bills are generated automatically and stored.
 
-🖼️ Screenshots
-
-Add screenshots of your project pages (Home, Login, Menu, Orders, etc.) here.
-
 🔮 Future Scope
 
 Integrate secure online payment gateways (UPI, Paytm, Cards).
