@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Manage Menu - KRMU Canteen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-menu">
+        <div class="top-bar">
+            <h2>Manage Menu Items</h2>
+            <div class="top-actions">
+                <button class="btn small" onclick="window.location.href='staffmenu.html'">Back to Orders</button>
+                <button class="btn logout" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div id="menuList" class="cart-items"></div>
+        <h3>Add New Item</h3>
+        <div class="add-item">
+            <input type="text" id="newName" placeholder="Item name">
+            <input type="number" id="newPrice" placeholder="Price">
+            <input type="text" id="newImage" placeholder="Image filename (images/xxx.jpg)">
+            <label>
+                <input type="checkbox" id="newAvailable" checked> Available
+            </label>
+            <button class="btn" onclick="addNewItem()">Add Item</button>
+        </div>
+    </div>
+    <script src="managemenu.js"></script>
+</body>
+</html>
