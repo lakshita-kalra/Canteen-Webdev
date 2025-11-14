@@ -46,7 +46,7 @@ Hosting
 Netlify
 
 Backend
-Render / Railway / Localhost
+Render / Localhost
 
 🔄 Project Workflow
 Customer  →  Frontend (HTML/CSS/JS)
@@ -72,30 +72,20 @@ node server.js
 
 4. Open frontend
 
-You can open index.html in your browser or run it using a local server (like Live Server in VS Code).
-
 🚀 Usage
 
 Login as Customer or Staff.
-
 Customers can browse menu items and place orders.
-
 Orders are sent to the backend for processing.
-
 Staff can view and update order status.
-
 Bills are generated automatically and stored.
 
 🔮 Future Scope
 
 Integrate secure online payment gateways (UPI, Paytm, Cards).
-
 Add real-time notifications for order updates.
-
 Implement AI-based item recommendations.
-
 Create analytics dashboard for admin to monitor sales and top items.
-
 Support multi-canteen management under one platform.
 
 👨‍💻 Contributors
@@ -103,4 +93,4 @@ Name	Role
 Lakshita Kalra	Frontend & Backend Developer
 Rahul Kumar	UI Design & Logic Implementation
 Rahul Bagoria	Testing & Integration
-Mentor: Aarti Mam	Project Guidance
+Mentor: Dr.Aarti Mam	
