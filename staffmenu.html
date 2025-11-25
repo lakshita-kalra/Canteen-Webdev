@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h2>Staff Dashboard</h2>
+            <button class="btn logout" onclick="logout()">Logout</button>
+        </div>
+        <div class="tabs">
+            <button class="btn" onclick="window.location.href='managemenu.html'">Manage Menu</button>
+        </div>
+        <h3>Manage Orders</h3>
+        <div id="ordersList"></div>
+    </div>
+    <script src="staffmenu.js"></script>
+</body>
+</html>
